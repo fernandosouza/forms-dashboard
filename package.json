@@ -18,7 +18,8 @@
 	"scripts": {
 		"compile": "babel --presets es2015 -d lib/ src/",
 		"publish": "npm run compile",
-		"test": "gulp test"
+		"test": "gulp test",
+		"dev": "gulp build && gulp watch"
 	},
 	"keywords": [
 		"metal"
