@@ -3,8 +3,40 @@
 /**
  * This renders the main element.
  * @param? elementClasses
+ * @param? data
  */
 {template .render}
-	<div class="formsDashboard{$elementClasses ? ' ' + $elementClasses : ''}">
+	<div class="clearfix formsDashboard{$elementClasses ? ' ' + $elementClasses : ''}">
+		<h1>Dashboard Title</h1>
+
+		<div class="formsDashboard-fp5">
+			{call FormsDashboardCard.render data="all"}
+				{param total: $data.fp5 /}
+			{/call}
+		</div>
+
+		<div class="formsDashboard-fp4">
+			{call FormsDashboardCard.render data="all"}
+				{param total: $data.fp4 /}
+			{/call}
+		</div>
+
+		<div class="formsDashboard-fp3">
+			{call FormsDashboardCard.render data="all"}
+				{param total: $data.fp3 /}
+			{/call}
+		</div>
+
+		<div class="formsDashboard-fp2">
+			{call FormsDashboardCard.render data="all"}
+				{param total: $data.fp2 /}
+			{/call}
+		</div>
+
+		<div class="formsDashboard-fp1">
+			{call FormsDashboardCard.render data="all"}
+				{param total: $data.fp1 /}
+			{/call}
+		</div>
 	</div>
 {/template}

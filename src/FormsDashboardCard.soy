@@ -1,0 +1,12 @@
+{namespace FormsDashboardCard}
+
+/**
+ * This renders the main element.
+ * @param? elementClasses
+ * @param? total
+ */
+{template .render}
+	<div class="formsDashboard-card{$elementClasses ? ' ' + $elementClasses : ''}">
+		<p>{$total or 0}</p>
+	</div>
+{/template}
