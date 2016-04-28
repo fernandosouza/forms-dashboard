@@ -24,8 +24,8 @@
 		"metal"
 	],
 	"dependencies": {
-		"metal-component": "1.0.0-rc.2",
-		"metal-soy": "1.0.0-rc.2"
+		"metal-component": "1.0.0-rc.7",
+		"metal-soy": "1.0.0-rc.9"
 	},
 	"devDependencies": {
 		"babel-cli": "^6.4.5",
