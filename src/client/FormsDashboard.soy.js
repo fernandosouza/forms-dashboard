@@ -44,28 +44,28 @@ var $templateAlias1 = Soy.getTemplate('FormsDashboardCard.incrementaldom', 'rend
 function $render(opt_data, opt_ignored, opt_ijData) {
   opt_data = opt_data || {};
   ie_open('div', null, null,
-      'class', 'clearfix formsDashboard' + (opt_data.elementClasses ? ' ' + opt_data.elementClasses : ''));
+      'class', 'clearfix forms-dashboard-container' + (opt_data.elementClasses ? ' ' + opt_data.elementClasses : ''));
     ie_open('h1');
       itext('Dashboard Title');
     ie_close('h1');
     ie_open('div', null, null,
-        'class', 'formsDashboard-fp5');
+        'class', 'forms-dashboard forms-dashboard-fp5');
       $templateAlias1(soy.$$augmentMap(opt_data, {total: opt_data.data.fp5}), null, opt_ijData);
     ie_close('div');
     ie_open('div', null, null,
-        'class', 'formsDashboard-fp4');
+        'class', 'forms-dashboard forms-dashboard-fp4');
       $templateAlias1(soy.$$augmentMap(opt_data, {total: opt_data.data.fp4}), null, opt_ijData);
     ie_close('div');
     ie_open('div', null, null,
-        'class', 'formsDashboard-fp3');
+        'class', 'forms-dashboard forms-dashboard-fp3');
       $templateAlias1(soy.$$augmentMap(opt_data, {total: opt_data.data.fp3}), null, opt_ijData);
     ie_close('div');
     ie_open('div', null, null,
-        'class', 'formsDashboard-fp2');
+        'class', 'forms-dashboard forms-dashboard-fp2');
       $templateAlias1(soy.$$augmentMap(opt_data, {total: opt_data.data.fp2}), null, opt_ijData);
     ie_close('div');
     ie_open('div', null, null,
-        'class', 'formsDashboard-fp1');
+        'class', 'forms-dashboard forms-dashboard-fp1');
       $templateAlias1(soy.$$augmentMap(opt_data, {total: opt_data.data.fp1}), null, opt_ijData);
     ie_close('div');
   ie_close('div');

@@ -6,34 +6,34 @@
  * @param? data
  */
 {template .render}
-	<div class="clearfix formsDashboard{$elementClasses ? ' ' + $elementClasses : ''}">
+	<div class="clearfix forms-dashboard-container{$elementClasses ? ' ' + $elementClasses : ''}">
 		<h1>Dashboard Title</h1>
 
-		<div class="formsDashboard-fp5">
+		<div class="forms-dashboard forms-dashboard-fp5">
 			{call FormsDashboardCard.render data="all"}
 				{param total: $data.fp5 /}
 			{/call}
 		</div>
 
-		<div class="formsDashboard-fp4">
+		<div class="forms-dashboard forms-dashboard-fp4">
 			{call FormsDashboardCard.render data="all"}
 				{param total: $data.fp4 /}
 			{/call}
 		</div>
 
-		<div class="formsDashboard-fp3">
+		<div class="forms-dashboard forms-dashboard-fp3">
 			{call FormsDashboardCard.render data="all"}
 				{param total: $data.fp3 /}
 			{/call}
 		</div>
 
-		<div class="formsDashboard-fp2">
+		<div class="forms-dashboard forms-dashboard-fp2">
 			{call FormsDashboardCard.render data="all"}
 				{param total: $data.fp2 /}
 			{/call}
 		</div>
 
-		<div class="formsDashboard-fp1">
+		<div class="forms-dashboard forms-dashboard-fp1">
 			{call FormsDashboardCard.render data="all"}
 				{param total: $data.fp1 /}
 			{/call}
