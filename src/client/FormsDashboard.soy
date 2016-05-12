@@ -1,0 +1,35 @@
+{namespace FormsDashboard}
+
+/**
+ * This renders the main element.
+ * @param? elementClasses
+ * @param? data
+ */
+{template .render}
+	<div class="clearfix forms-dashboard-container{$elementClasses ? ' ' + $elementClasses : ''}">
+		{call FormsDashboardCard.render data="all"}
+			{param total: $data.fp5 /}
+			{param elementClasses: 'forms-dashboard-card-big forms-dashboard-fp5' /}
+		{/call}
+
+		{call FormsDashboardCard.render data="all"}
+			{param total: $data.fp4 /}
+			{param elementClasses: 'forms-dashboard-fp4' /}
+		{/call}
+		
+		{call FormsDashboardCard.render data="all"}
+			{param total: $data.fp3 /}
+			{param elementClasses: 'forms-dashboard-fp3' /}
+		{/call}
+
+		{call FormsDashboardCard.render data="all"}
+			{param total: $data.fp2 /}
+			{param elementClasses: 'forms-dashboard-fp2' /}
+		{/call}
+
+		{call FormsDashboardCard.render data="all"}
+			{param total: $data.fp1 /}
+			{param elementClasses: 'forms-dashboard-fp1' /}
+		{/call}
+	</div>
+{/template}

@@ -42,7 +42,7 @@ var iattr = IncrementalDom.attr;
 function $render(opt_data, opt_ignored, opt_ijData) {
   opt_data = opt_data || {};
   ie_open('div', null, null,
-      'class', 'formsDashboard-card' + (opt_data.elementClasses ? ' ' + opt_data.elementClasses : ''));
+      'class', 'forms-dashboard-card' + (opt_data.elementClasses ? ' ' + opt_data.elementClasses : ''));
     ie_open('p');
       itext((goog.asserts.assert((opt_data.total || 0) != null), opt_data.total || 0));
     ie_close('p');
